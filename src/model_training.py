@@ -47,26 +47,15 @@ key=True
 
 
 if key:
-    # Suppress warnings
-    warnings.filterwarnings("ignore")
-
-    # Define EarlyStopping callback
-    early_stopping = EarlyStopping(monitor='accuracy',  # Monitor accuracy
-                                   patience=0,          # Stop as soon as accuracy stops improving
-                                   restore_best_weights=True)  # Restore the best weights
-
-    # Train the model with EarlyStopping callback
     history = model.fit(
-        train_generator,
-        validation_data=test_generator,
-        epochs=3,
-        callbacks=[early_stopping]  # Add EarlyStopping callback
+    train_generator,
+    validation_data=test_generator,
+    epochs=4
     )
-
     model.save('caries_gingivitis_model.keras')
+    print("\nModel saved successfully!\n")
     accuraacy_graph()
     loss_graph()
-    
 
 # Ensure the model is not saved with low accuracy if training is interrupted  
 else:

@@ -1,6 +1,4 @@
 #Importing the Required Libraries
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppresses INFO and WARNING messages
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
