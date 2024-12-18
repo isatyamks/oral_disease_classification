@@ -50,7 +50,7 @@ if key:
     history = model.fit(
     train_generator,
     validation_data=test_generator,
-    epochs=4
+    epochs=5
     )
     model.save('caries_gingivitis_model.keras')
     print("\nModel saved successfully!\n")
