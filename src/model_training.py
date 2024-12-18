@@ -60,3 +60,5 @@ if key:
 # Ensure the model is not saved with low accuracy if training is interrupted  
 else:
     print("\n\nSet 'key' to True to train the model.\n\n")  
+
+
