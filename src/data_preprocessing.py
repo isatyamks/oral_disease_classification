@@ -3,10 +3,10 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
 #1.train_data
-train_data_path = '../data/Train'
+train_data_path = '..//data//Train'
 
 #2.test_data
-test_data_path = '../data/Test'
+test_data_path = '..//data//Test'
 
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32

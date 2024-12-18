@@ -7,13 +7,13 @@ import numpy as np
 
 
 # Load the model
-model = load_model('../caries_gingivitis_model.keras')
+model = load_model('caries_gingivitis_model.keras')
 
 
 # Load the test data
 test_datagen = ImageDataGenerator(rescale=1./255)
 test_generator = test_datagen.flow_from_directory(
-    'data/TEST',
+    '..//data//TEST',
     target_size=(224, 224),  # Resize images to the expected input size of MobileNetV2
     batch_size=32,
     class_mode='binary',  # Use 'categorical' if you have more than 2 classes

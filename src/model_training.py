@@ -1,7 +1,6 @@
 import warnings
 from tensorflow.keras import layers, models
 from tensorflow.keras.applications import MobileNetV2
-from tensorflow.keras.callbacks import EarlyStopping
 from data_preprocessing import train_generator,test_generator
 import matplotlib.pyplot as plt
 # model building
